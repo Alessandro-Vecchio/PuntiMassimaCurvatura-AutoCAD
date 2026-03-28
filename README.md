@@ -21,6 +21,8 @@ Uno script AutoLISP per identificare automaticamente i punti di massima curvatur
 2. Inserisci i parametri desiderati e seleziona le polilinee da analizzare.
 > [!TIP]
 > È anche possibile selezionare le polilinee prima dell'esecuzione del comando.
+> [!TIP]
+> È possibile cambiare lo stile di visualizzazione dei punti con il comando `DDPTYEPE`
 
 ## Parametri di Configurazione
 1. `Passo di Campionamento`: La distanza (in unità disegno) tra i punti di scansione lungo la linea. Un valore più piccolo aumenta la precisione ma rallenta l'elaborazione.
