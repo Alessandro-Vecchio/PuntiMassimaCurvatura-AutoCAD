@@ -9,16 +9,16 @@
   ;; ============================================================
   ;; 1. CONFIGURAZIONE E INPUT
   ;; ============================================================
-  (setq usr_dist (getreal "\nPasso di campionamento (metri) <8>: "))
-  (setq dist_step (if (null usr_dist) 8 usr_dist))
+  (setq usr_dist (getreal "\nPasso di campionamento (unità disegno) <1>: "))
+  (setq dist_step (if (null usr_dist) 1 usr_dist))
 
   (setq usr_offset (getint "\nAmpiezza analisi (n. passi per ignorare rumore) <3>: "))
   (setq offset (if (null usr_offset) 3 usr_offset))
 
-  (setq usr_soglia (getreal "\nSoglia minima curvatura (K) <0.001>: "))
+  (setq usr_soglia (getreal "\nSoglia minima curvatura <0.001>: "))
   (setq soglia (if (null usr_soglia) 0.001 usr_soglia))
 
-  (setq usr_win (getint "\nSmoothing finale (n. campioni, dispari) <3>: "))
+  (setq usr_win (getint "\nSmoothing risultato (n. campioni, dispari) <3>: "))
   (setq winSize (if (null usr_win) 3 usr_win))
   (if (= (rem winSize 2) 0) (setq winSize (1+ winSize)))
 
