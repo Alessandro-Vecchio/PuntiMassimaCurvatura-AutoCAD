@@ -25,8 +25,8 @@ Uno script AutoLISP per identificare automaticamente i punti di massima curvatur
 ## Parametri di Configurazione
 1. `Passo di Campionamento`: La distanza (in unità disegno) tra i punti di scansione lungo la linea. Un valore più piccolo aumenta la precisione ma rallenta l'elaborazione.
 2. `Ampiezza Analisi (Offset)`: Il numero di passi da saltare per il calcolo della curvatura. Aumenta questo valore per ignorare il "rumore" e le micro-ondulazioni delle polilinee.
-3. `Soglia Minima Curvatura (K)`: Filtra le zone quasi rettilinee. Solo i punti con curvatura superiore a questa soglia verranno considerati.
-4. `Smoothing Finale`: Numero di campioni per la media mobile dei valori di curvatura (usare `1` per disattivarlo).
+3. `Soglia Minima Curvatura`: Filtra le zone quasi rettilinee. Solo i punti con curvatura superiore a questa soglia verranno considerati.
+4. `Smoothing Risultato`: Numero di campioni per la media mobile dei valori di curvatura (usare `1` per disattivarlo).
 
 > [!CAUTION]
 >È sconsigliato l'utilizzo su un grande numero di polilinee con parametri ad elevata precisione, questo potrebbe comportare tempi di esecuzione elevati e rallentamento del programma.
